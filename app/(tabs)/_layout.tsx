@@ -1,33 +1,47 @@
+// filepath: /home/trungnhat24/Documents/camera-notes/app/(tabs)/_layout.tsx
+import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
-import React from 'react';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { HapticTab } from '../../components/haptic-tab';
+import { useThemeColor } from '../../hooks/use-theme-color';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  const iconColor = useThemeColor({}, 'text');
+  const tintColor = useThemeColor({}, 'tint');
+  const backgroundColor = useThemeColor({}, 'background');
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+        tabBarActiveTintColor: tintColor,
+        tabBarInactiveTintColor: iconColor,
+        tabBarStyle: { backgroundColor },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "Gallery",
+          headerTitle: "Camera Notes",
+          tabBarIcon: ({ color }) => <Ionicons name="images" size={24} color={color} />,
+          tabBarButton: (props) => <HapticTab {...props} />,
+        }}
+      />
+      <Tabs.Screen
+        name="camera"
+        options={{
+          title: "Camera",
+          headerTitle: "Take Photo",
+          tabBarIcon: ({ color }) => <Ionicons name="camera" size={24} color={color} />,
+          tabBarButton: (props) => <HapticTab {...props} />,
         }}
       />
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: "About",
+          headerTitle: "About App",
+          tabBarIcon: ({ color }) => <Ionicons name="information-circle" size={24} color={color} />,
+          tabBarButton: (props) => <HapticTab {...props} />,
         }}
       />
     </Tabs>

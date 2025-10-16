@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+Nguyễn Trung Nhât - 22IT206
+Camera Notes
+Ứng dụng chụp ảnh và ghi chú đa năng
+Camera Notes là một ứng dụng React Native hiện đại cho phép bạn chụp ảnh và tạo ghi chú trực tiếp từ camera. Được xây dựng với Expo và React Native, ứng dụng cung cấp trải nghiệm người dùng mượt mà và trực quan.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Tính năng chính
+Tích hợp camera với điều khiển đèn flash và chuyển đổi camera
+Chụp ảnh chất lượng cao
+Tạo và quản lý ghi chú kèm hình ảnh
+Giao diện người dùng hiện đại, được tối ưu hóa cho thiết bị di động
+Hình ảnh ứng dụng :
+Đặt hình ảnh ứng dụng của bạn ở đây
 
-## Get started
+Cài đặt
+Clone repository này
 
-1. Install dependencies
+Cài đặt các dependencies
 
-   ```bash
-   npm install
-   ```
+Khởi động server phát triển
 
-2. Start the app
+Cách sử dụng
+Mở ứng dụng trên thiết bị của bạn
+Cấp quyền truy cập camera khi được yêu cầu
+Chụp ảnh bằng giao diện camera
+Tạo ghi chú với hình ảnh đã chụp
+Duyệt và quản lý ghi chú của bạn trong ứng dụng
+Công nghệ sử dụng
+Expo - Nền tảng phát triển React Native
+expo-camera - Truy cập camera
+expo-media-library - Quản lý media
+expo-file-system - Thao tác với file
+React Navigation - Xử lý điều hướng
+AsyncStorage - Lưu trữ dữ liệu
+Phát triển
+Dự án này sử dụng định tuyến dựa trên file với Expo Router.
 
-   ```bash
-   npx expo start
-   ```
+Để chạy ứng dụng trên các nền tảng khác nhau:
 
-In the output, you'll find options to open the app in a
+Giấy phép
+MIT License
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Tác giả
+Tên của bạn - Nguyễn Trung Nhật

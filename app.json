@@ -38,6 +38,13 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow access to your photos",
+          "audioPermission": "Allow access to your audio files"
+        }
       ]
     ],
     "experiments": {
